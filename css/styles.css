@@ -34,3 +34,7 @@ a{
     color:var(--secondary-link-text);
 
 }
+
+#hero-section{
+    display: flex;
+}
