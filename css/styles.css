@@ -1,0 +1,36 @@
+:root {
+    --background-hero-color: #1f2937;
+    --hero-logo-color: #F9FAF8;
+    --secondary-link-text: #E5E7EB;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf"); 
+
+}
+header {
+    display: flex;
+    background-color: var(--background-hero-color);
+    color: var(--secondary-link-text);
+    font-family: "Roboto";
+    padding: 10px 15px;
+    justify-content: space-around;
+
+}
+
+
+nav{
+    display: flex;
+    color:var(--secondary-link-text);
+    text-decoration: none;
+    gap: 20px;
+    font-family: "Roboto";
+
+}
+
+a{
+    text-decoration: none;
+    color:var(--secondary-link-text);
+
+}
