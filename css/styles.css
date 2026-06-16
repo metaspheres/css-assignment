@@ -2,12 +2,20 @@
     --background-hero-color: #1f2937;
     --hero-logo-color: #F9FAF8;
     --secondary-link-text: #E5E7EB;
+    --call-to-action: #3882F6;
+    --quote-bg: #E5E7EB;
+    --quote-text: #1F2937;
 }
+
 
 @font-face{
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Regular.ttf"); 
 
+}
+@font-face{
+    font-family: "Roboto Light";
+    src: url("../fonts/Roboto/Roboto-Light.ttf")
 }
 header {
     display: flex;
@@ -51,7 +59,8 @@ footer{
     
 }
 body{
-    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 #hero{    
@@ -93,3 +102,57 @@ body{
     cursor: pointer;
 }
 
+#articles-links{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#articles-links div{
+    max-width: 130px;
+    height: auto;
+    font-family: "Roboto";
+    margin: 50px 50px;
+
+}
+#articles-links img{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--call-to-action);
+}
+
+#quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--quote-bg);
+    font-family: "Roboto Light";
+    font-size: 36px;
+}
+
+blockquote {
+    margin: 150px;
+    color: var(--background-hero-color);
+    font-style: italic;
+    /* font-size: 1rem; */
+
+}
+cite {
+    display: block;
+    color: var(--background-hero-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+
+}
+
+@media screen and (max-width: 780px) {
+  blockquote {
+    margin: 50px;
+  }
+}
