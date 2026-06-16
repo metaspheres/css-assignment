@@ -19,13 +19,14 @@
 }
 header {
     display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 10px 15px;
     background-color: var(--background-hero-color);
     color: var(--secondary-link-text);
     font-family: "Roboto";
     padding: 10px 15px;
     justify-content: space-around;
-    
-
 }
 
 nav{
