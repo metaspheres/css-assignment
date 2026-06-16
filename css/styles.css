@@ -38,3 +38,14 @@ a{
 #hero-section{
     display: flex;
 }
+
+footer{
+    background-color: var(--background-hero-color);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 25px;
+    color:var(--secondary-link-text);
+    font-family: "Roboto";
+    
+}
