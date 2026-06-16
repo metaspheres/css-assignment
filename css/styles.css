@@ -16,6 +16,7 @@ header {
     font-family: "Roboto";
     padding: 10px 15px;
     justify-content: space-around;
+    
 
 }
 
@@ -49,3 +50,46 @@ footer{
     font-family: "Roboto";
     
 }
+body{
+    max-width: 1200px;
+}
+
+#hero{    
+    background-color: var(--background-hero-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 50px;
+    color: var(--hero-logo-color);
+    font-family: "Roboto";
+}
+
+
+#hero div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+#hero h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#hero img{
+    width: 100%;
+    height: auto;
+}
+
+#hero button{
+    width: 150px;
+    height: 40px;
+    background-color: var(--hero-logo-color);
+    color: var(--background-hero-color);
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
