@@ -20,18 +20,24 @@
 header {
     display: flex;
     position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    padding: 10px 15px;
+    height: 40px;
+    padding: 20px 25px;
     background-color: var(--background-hero-color);
     color: var(--secondary-link-text);
     font-family: "Roboto";
     padding: 10px 15px;
     justify-content: space-around;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid var(--background-header-color);
+
 }
 
 nav{
     display: flex;
-    color:var(--secondary-link-text);
+    color: var(--secondary-link-text);
     text-decoration: none;
     gap: 20px;
     font-family: "Roboto";
@@ -60,7 +66,12 @@ footer{
 }
 body{
     margin: 0 auto;
+}
+
+main{
     max-width: 1440px;
+    margin: 0 auto;
+
 }
 
 #hero{    
@@ -155,6 +166,12 @@ cite {
   blockquote {
     margin: 50px;
   }
+  .showcase-portfolio > section{
+    flex-direction: column;
+  }
+  .portfolio-main-container{
+    margin: 3vw;
+  }
 }
 
 #call-to-action{
@@ -180,19 +197,23 @@ cite {
     font-family: "Roboto";
     cursor: pointer;
 }
-.subtitle{
-    font-family: "Roboto";
-
-}
 
 .showcase-portfolio{
+    margin-top: 7vw;
+    margin-bottom: 7vw;
     display: flex;
     flex-direction: column;
     font-family: "Roboto";
 }
-.showcase-portfolio div{
+
+.showcase-portfolio h1{
+    font-size: 5rem;
+}
+.portfolio-container h2{
+    font-size: 3rem;
+}
+.showcase-portfolio > section{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
@@ -225,13 +246,15 @@ cite {
     padding: 15px 320px;
     font-size: 18px;
 }
+
 .portfolio-container{
     display: flex;
     flex-direction: column;
     gap: 50px;
     font-family: "Roboto";
+    margin-bottom: 8vw;
 }
-.portfolio-container div{
+.portfolio-container article{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -244,9 +267,9 @@ cite {
     border-radius: 15px;
 }
 
-
 .portfolio-container img{
     width: 50%;
     height: auto;
     object-fit: contain;
 }
+
