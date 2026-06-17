@@ -437,7 +437,7 @@ p {
     }
 
     #projects-grid {
-        flex-direction: column !important;
+        flex-direction: column;
         padding: 20px;
     }
 
@@ -556,7 +556,7 @@ background-color: #101010;
 
 .footer-column h3, .footer-column h4 {
   margin-bottom: 20px;
-  color: #00d4ff; /* لون مميز للبراند */
+  color: #00d4ff; 
 }
 
 .footer-column ul {
