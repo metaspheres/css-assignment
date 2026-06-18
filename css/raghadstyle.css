@@ -494,19 +494,37 @@ background-color:var(--background-Footer-color);
 }
 
 /* ---------------------responsive----------------------------- */
+/* --------------------responsive---------------------- */
 @media (max-width: 768px) {
-    .project-image {
-        flex: 0 0 50%; 
+
+    header {
+        height: auto;
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+        
     }
 
-    .project-image img {
-        height: auto;
-        aspect-ratio: 16 / 9;
+    .logo {
+        font-size: 1.1rem;
     }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
     #hero {
         padding: 20px;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 100px;
         box-sizing: border-box;
     }
 
@@ -535,30 +553,68 @@ background-color:var(--background-Footer-color);
         justify-content: flex-start;
     }
 
-    #services-cards-section {
-        padding: 30px 5%;
+    .projects-grid {
+        flex-direction: column !important;
+        text-align: center;
     }
 
-    #projects-grid {
+    .projects-grid:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    #Why-us-section {
         flex-direction: column;
+        height: auto;
         padding: 20px;
     }
 
-    .project-image {
-        flex: none;
+    .why-grid {
         width: 100%;
     }
 
-    .project-image img {
-        height: 200px;
+    .content {
+        width: 100%;
+        text-align: center;
     }
 
-    .project-content {
-        padding: 0;
+    #faq-section {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
+    .btn-container a {
+        width: 100%;
         text-align: center;
+        padding: 14px;
+    }
+
+    #services-section h1,
+    .projects-header h1 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        flex: 0 0 260px;
+    }
+
+    .project-content h1 {
+        font-size: 1.5rem;
     }
 
     .project-content p {
-        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
