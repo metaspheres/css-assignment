@@ -5,6 +5,8 @@
     --call-to-action: #3882F6;
     --quote-bg: #E5E7EB;
     --quote-text: #1F2937;
+    --background-Footer-color:#101010
+
 }
 
 
@@ -394,6 +396,30 @@ cite {
     display:flex;
     flex-direction: column;
     padding-bottom: 3vh;
+    }
+    
+    header {
+        height: auto;
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 0.9rem;
     }
 }
 
