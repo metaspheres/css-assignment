@@ -2,7 +2,7 @@
 
 Responsive website for NexaCore, a fictitious software services company showcasing examples of Services, Careers, and About pages.
 
-## Live Demo: metaspheres.github.io/css-assignment
+## Live Demo: [metaspheres.github.io/css-assignment](https://metaspheres.github.io/css-assignment/)
 
 ### Pages:
 - Landing page
