@@ -150,8 +150,6 @@ blockquote {
     margin: 150px;
     color: var(--background-hero-color);
     font-style: italic;
-    /* font-size: 1rem; */
-
 }
 
 .quote img{
@@ -201,7 +199,6 @@ cite {
     cursor: pointer;
 }
 
-
 .our-mission{
     display: flex;
     flex-direction: column;
@@ -226,7 +223,7 @@ cite {
 /* careers and training page */
 
 .careers-main-container{
-    padding:0vw 1vw 0vw 1vw;
+    padding:0 1rem 0 1rem;
     margin-top: 7vw;
     margin-bottom: 7vw;
     display: flex;
@@ -234,11 +231,17 @@ cite {
     font-family: "Roboto";
 }
 
-.showcase-careers h1{
-    font-size: 5rem;
+.careers-main-container h2{
+    font-size: 3rem;
+    margin: 4rem 0 2rem 0;
 }
 
-.showcase-careers > section{
+.careers-main-container h1{
+    font-size: 5rem;
+
+}
+
+.anchor-card-container > section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -246,12 +249,12 @@ cite {
 
 }
 
-.showcase-careers article{
+.anchor-card-container article{
     width: 100%;
     height: auto;
 }
 
-.showcase-careers img{
+.anchor-card-container img{
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -260,12 +263,7 @@ cite {
 .careers-container{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin-bottom: 8vw;
-}
-
-.careers-container h2{
-    font-size: 3rem;
+    gap: 3rem;
 }
 
 .careers-container article{
@@ -273,7 +271,7 @@ cite {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
     text-align: center;
     background-color: var(--quote-bg);
     color: var(--quote-text);
@@ -281,7 +279,7 @@ cite {
 
 }
 
-.careers-container div{
+.careers-container article div{
     display:flex;
     flex-direction: column;
 }
@@ -293,17 +291,22 @@ cite {
     border-radius: 15px;
 
 }
-.careers-container button{
+.apply-bt{
     width: 120px;
     height: 40px;
     margin: 0 auto;
-    background-color: var(--call-to-action);
+    background-color: var(--background-hero-color);
     color: var(--secondary-link-text);
     border: 3px solid var(--secondary-link-text);
     border-radius: 5px;
     font-family: "Roboto";
     cursor: pointer;
 }
+
+.apply-bt:hover {
+  background-color: var(--call-to-action);
+}
+
 
 .testimonials h2{
     font-family: "Roboto";
@@ -318,32 +321,28 @@ cite {
 }
 
 .testimonials em{
-    padding: 2vh;
+    padding: 2rem;
 }
-
 
 /*media queries*/
 
 @media screen and (max-width: 780px) {
   blockquote {
     margin: 50px;
-  }
-  .showcase-careers > section{
+    }
+  .anchor-card-container > section{
     flex-direction: column;
-  }
-
+    }
   .careers-container article{
     flex-direction: column;
-    gap:20px;
-}
+    }
 .careers-container img{
     width: 100%;
     height: auto;
-}
-
+    }
 .careers-container div{
     display:flex;
     flex-direction: column;
     padding-bottom: 3vh;
-}
+    }
 }
