@@ -19,35 +19,38 @@
 }
 
 /* --------------header--------------------- */
+header, nav, .logo, a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
 header {
     display: flex;
     position: fixed;
     top: 0;
-    z-index: 1000;
     width: 100%;
     height: 40px;
-    background-color: var(--background-hero-color);
-    color: var(--secondary-link-text);
-    font-family: "Roboto";
     padding: 10px 15px;
     justify-content: space-around;
     align-items: center;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid var(--background-header-color);
     box-sizing: border-box;
+    z-index: 1000;
+    background-color: var(--background-hero-color);
+    color: var(--secondary-link-text);
+    border-bottom: 2px solid var(--background-header-color);
 }
 
-nav, .logo {
+nav {
     display: flex;
-    color: var(--secondary-link-text);
-    text-decoration: none;
     gap: 20px;
-    font-family: "Roboto";
-    padding: 15px 15px;
+    padding: 15px;
     align-items: center;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 1.3rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -55,20 +58,16 @@ nav, .logo {
 }
 
 a {
-    text-decoration: none;
     color: var(--secondary-link-text);
-    transition: color 0.2s ease;
 }
 
-a:hover {
+a:hover, a.active {
     color: var(--call-to-action);
 }
 
 a.active {
-    color: var(--call-to-action);
     font-weight: bold;
 }
-
 /* -------------body ----------------- */
 body {
     margin: 0 auto;
@@ -91,24 +90,22 @@ p {
 
 /* ----------------Hero section--------------------- */
 #hero {
-    width: 95%;
-    padding: 40px;
-    margin: 70px auto 0 auto;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 70px auto 0 auto;
+    padding: 40px;
 }
 
 .hero-image {
     position: relative;
-    width: auto;
-    height: 65vh;
-    background-image: url("../imgs/innovation-card.jpg");
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
+    width: auto;
+    height: 65vh;
     padding-left: 10%;
     border-radius: 50px;
+    background: url("../imgs/innovation-card.jpg") center/cover;
 }
 
 .hero-image::before {
@@ -125,42 +122,19 @@ p {
 .hero-content {
     position: relative;
     z-index: 2;
-    color: var(--hero-logo-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     width: 90%;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: flex-end;
-    width: auto;
-}
-
-.btn-container button {
-    padding: 15px 30px;
-    background-color: var(--call-to-action);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.btn-container button:hover {
-    background-color: #2563eb;
-    transform: translateY(-2px);
+    gap: 20px;
+    color: var(--hero-logo-color);
 }
 
 .hero-content h1 {
+    margin: 0;
     font-size: 5rem;
     font-weight: 900;
-    margin: 0;
     line-height: 0.9;
 }
 
@@ -168,7 +142,30 @@ p {
     color: var(--call-to-action);
 }
 
-/* -----Start--------services-cards-section------------------- */
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.btn-container a {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    background-color: var(--call-to-action);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-container a:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* -------------services-cards-section------------------- */
 #services-section {
     padding: 60px 0 40px 0;
 }
