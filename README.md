@@ -17,6 +17,6 @@ Responsive website for NexaCore, a fictitious software services company showcasi
 Features responsive, mobile-ready design, semantic HTML elements and a fixed header/navigator.
 
 ### Made by: 
-https://github.com/ragadag621
-https://github.com/OJorgee
-https://github.com/metaspheres
+- https://github.com/ragadag621
+- https://github.com/OJorgee
+- https://github.com/metaspheres
