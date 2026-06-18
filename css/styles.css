@@ -163,23 +163,25 @@ main{
     cursor: pointer;
 }
 
-#articles-links{
+.service-cards-container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 50px;
+    gap: 3rem;
 }
 
-#articles-links div{
-    max-width: 130px;
+.service-cards-container article{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
     height: auto;
     font-family: "Roboto";
-    margin: 50px 50px;
-
+    margin: 4rem 4rem;
+    text-align: center;
 }
-#articles-links img{
-    width: 100%;
+.service-cards-container img{
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     border: 2px solid var(--call-to-action);
 }
@@ -392,5 +394,14 @@ cite {
     display:flex;
     flex-direction: column;
     padding-bottom: 3vh;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+.service-cards-container{
+    flex-direction: row;
+    flex-wrap: wrap;
     }
 }
