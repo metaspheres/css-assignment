@@ -17,8 +17,10 @@
 }
 @font-face{
     font-family: "Roboto Light";
-    src: url("../fonts/Roboto/Roboto-Light.ttf")
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
+
+/* header */
 
 header, nav, .logo, a {
     font-family: "Roboto", sans-serif;
@@ -69,14 +71,12 @@ a:hover, a.active {
 a.active {
     font-weight: bold;
 }
-#hero-section{
-    display: flex;
-}
+/* footer*/
 
 #footer {
-background-color:var(--background-Footer-color);   
- color: var(--secondary-link-text);
-   padding: 50px 5% 20px;
+    background-color:var(--background-Footer-color);   
+    color: var(--secondary-link-text);
+    padding: 50px 5% 20px;
 }
 
 .footer-container {
@@ -117,31 +117,37 @@ background-color:var(--background-Footer-color);
 }
 
 body{
+    font-family: "Roboto";
     margin: 0 auto;
+    justify-content: center;
 }
 
-main{
-    max-width: 1440px;
-    margin: 0 auto;
+main {
+  max-width: none;
+}
+
+main > section:not(#hero):not(#call-to-action) {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 #hero{    
     background-color: var(--background-hero-color);
+    max-width: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 50px 50px;
+    gap: 5rem;
     color: var(--hero-logo-color);
     font-family: "Roboto";
+    padding: 100px 150px;
 }
 
 #hero div{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
 }
 
 #hero h1{
@@ -165,14 +171,18 @@ main{
     cursor: pointer;
 }
 
-.service-cards-container{
+#hero-section{
+    display: flex;
+}
+
+#service-cards-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
 }
 
-.service-cards-container article{
+.article{
     display: flex;
     flex-direction: column;
     max-width: 30%;
@@ -181,7 +191,7 @@ main{
     margin: 4rem 4rem;
     text-align: center;
 }
-.service-cards-container img{
+#service-cards-container img{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -227,19 +237,6 @@ cite {
 }
 
 
-#call-to-action{
-    background-color: var(--call-to-action);
-    font-family: "Roboto";
-    color: var(--secondary-link-text);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 80px;
-    border-radius: 10px;
-    margin: 50px auto;
-    max-width: 1000px;
-}
-
 .button-div button{
     width: 150px;
     height: 40px;
@@ -272,9 +269,25 @@ cite {
     font-size: 18px;
 }
 
+#call-to-action{
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: var(--call-to-action);
+    font-family: "Roboto";
+    color: var(--secondary-link-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 80px;
+    border-radius: 10px;
+}
 /* careers and training page */
 
-.careers-main-container{
+#careers-main-container{
     padding:0 1rem 0 1rem;
     margin-top: 7vw;
     margin-bottom: 7vw;
@@ -283,12 +296,12 @@ cite {
     font-family: "Roboto";
 }
 
-.careers-main-container h2{
+#careers-main-container h2{
     font-size: 3rem;
     margin: 4rem 0 2rem 0;
 }
 
-.careers-main-container h1{
+#careers-main-container h1{
     font-size: 5rem;
 
 }
@@ -360,19 +373,19 @@ cite {
 }
 
 
-.testimonials h2{
+#testimonials h2{
     font-family: "Roboto";
     font-size: 3rem;
 }
 
-.testimonials blockquote{
+#testimonials blockquote{
     padding: 50px;
     font-style: italic;
     margin:10vh 0 10vh 0;
     border-radius: 15px;
 }
 
-.testimonials em{
+#testimonials em{
     padding: 2rem;
 }
 
@@ -423,11 +436,14 @@ cite {
     }
 }
 
-
 @media screen and (max-width: 1024px) {
 
-.service-cards-container{
+#service-cards-container{
     flex-direction: row;
     flex-wrap: wrap;
+    }
+#hero{    
+    flex-wrap: wrap;
+    padding: 90px 50px;
     }
 }
