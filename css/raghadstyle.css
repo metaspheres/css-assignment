@@ -165,7 +165,7 @@ p {
     transform: translateY(-2px);
 }
 
-/* -------------services-cards-section------------------- */
+/* ----------services-cards-section------------------- */
 #services-section {
     padding: 60px 0 40px 0;
 }
@@ -194,7 +194,7 @@ p {
     border-radius: 10px;
 }
 
-#services-cards-section {
+.services-cards-section {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -204,13 +204,8 @@ p {
     scroll-snap-type: x mandatory;
     scroll-padding: 0 10%;
     scrollbar-width: none;
-    font-family: "Roboto Light", sans-serif;
+    font-family: "Roboto Light";
 }
-
-#services-cards-section::-webkit-scrollbar {
-    display: none;
-}
-
 .service-card {
     flex: 0 0 320px;
     scroll-snap-align: start;
@@ -226,13 +221,10 @@ p {
     position: relative;
     overflow: hidden;
 }
-
-
 .service-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 40px rgba(56, 130, 246, 0.2);
 }
-
 .service-card img {
     width: 100%;
     height: 180px;
@@ -270,37 +262,30 @@ p {
     text-align: center;
 }
 
-/* ------End-------------services-cards-section------------------------------------ */
-
-
-/* ----------------projects section-------------------------- */
+/* ----------------projects-section-------------------------- */
 #projects-section {
-    background-color: var(--background-hero-color);
-    color: var(--secondary-link-text);
-    font-family: "Roboto";
-    width: 90%;
-    margin: 20px auto 40px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 90%;
+    margin: 20px auto 40px auto;
     gap: 24px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-hero-color);
+    color: var(--secondary-link-text);
 }
 
 .projects-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--secondary-link-text);
     padding-bottom: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
-
-.projects-header h1 {
-    margin: 0;
-    padding: 0;
-}
+.projects-header h1 { margin: 0; padding: 0; }
 
 .projects-header span {
     display: block;
@@ -310,34 +295,32 @@ p {
     border-radius: 10px;
 }
 
-#projects-grid {
-    width: 100%;
-    height: auto;
+.projects-grid {
+    position: relative;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding: 25px;
     gap: 30px;
+    align-items: center;
+    box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    align-items: center;
-    transition: all 0.4s ease;
-    position: relative;
-    box-sizing: border-box;
     background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
 }
 
-#projects-grid:hover {
+.projects-grid:hover {
     border-color: rgba(56, 130, 246, 0.4);
-    box-shadow: 0 12px 40px rgba(56, 130, 246, 0.15);
     background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 12px 40px rgba(56, 130, 246, 0.15);
 }
 
-#projects-grid:nth-child(even) {
-    flex-direction: row-reverse;
-}
+.projects-grid:nth-child(even) { flex-direction: row-reverse; }
 
-.quote-content {
+
+.project-content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -346,55 +329,35 @@ p {
     text-align: left;
 }
 
-.quote-content h1 {
+.project-content h1 {
+    margin: 0;
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--hero-logo-color);
-    margin: 0;
     line-height: 1.2;
-    padding: 0;
 }
 
-.quote-content p {
+.project-content p {
+    margin: 0;
     font-size: 1rem;
     line-height: 1.7;
     opacity: 0.8;
-    margin: 0;
-    display: block;
-    text-align: left;
 }
 
-.quote-image {
+.project-image {
     flex: 0 0 380px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.quote-image img {
+.project-image img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
-
-
-#projects-grid:target {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;
-    border-radius: 0;
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1);
-}
-
 /* ---------------------responsive----------------------------- */
 @media (max-width: 768px) {
     #hero {
