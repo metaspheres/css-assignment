@@ -1,6 +1,7 @@
 :root {
     --background-hero-color: #1f2937;
     --background-header-color: #3b4c64;
+    --background-Footer-color:#101010;
     --hero-logo-color: #F9FAF8;
     --secondary-link-text: #E5E7EB;
     --call-to-action: #3882F6;
@@ -30,8 +31,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 40px;
-    padding: 10px 15px;
+    height: 50px;
+    padding: 15px 15px;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
@@ -358,8 +359,150 @@ p {
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
+
+/* ------------refactor done ------------------ */
+
+/* --------------------Wwwwwwhy to choose our company -------------------- */
+#Why-us-section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.04);
+
+}
+.why-grid{
+    flex: auto;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    gap: 20px;
+     
+}
+.why-grid span{
+    width: 10%;
+    height: auto;
+    color: var(--call-to-action);
+    flex-shrink: 0;
+    padding: 5px;
+    font-size: 1.5rem;
+    
+    
+}
+.why-grid div{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    color: var(--secondary-link-text);
+    display: flex; 
+    align-items: center;
+    
+}
+.content{
+    color: var(--secondary-link-text);
+    width: 40%;
+
+}
+
+/* ------------------Q------------------------- */
+#faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  color: var(--secondary-link-text);
+}
+
+.faq-item {
+  border-bottom: 3px solid var(--secondary-link-text);
+  border-radius: 10px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.faq-item summary {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  list-style: none; 
+}
+
+.faq-item[open] summary span {
+  transform: rotate(45deg);
+}
+
+.faq-item summary span {
+  transition: 0.3s;
+}
+
+.faq-item p {
+  padding-top: 15px;
+  color: var(--call-to-action);
+  line-height: 1.6;
+}
+/* -----------------footer-------------------------- */
+#footer {
+background-color:var(--background-Footer-color);   
+ color: var(--secondary-link-text);
+   padding: 50px 5% 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3, .footer-column h4 {
+  margin-bottom: 20px;
+  color:var(--call-to-action); 
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: var(--secondary-link-text);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
+
 /* ---------------------responsive----------------------------- */
 @media (max-width: 768px) {
+    .project-image {
+        flex: 0 0 50%; 
+    }
+
+    .project-image img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
     #hero {
         padding: 20px;
         width: 100%;
@@ -401,140 +544,21 @@ p {
         padding: 20px;
     }
 
-    .quote-image {
+    .project-image {
         flex: none;
         width: 100%;
     }
 
-    .quote-image img {
+    .project-image img {
         height: 200px;
     }
 
-    .quote-content {
+    .project-content {
         padding: 0;
         text-align: center;
     }
 
-    .quote-content p {
+    .project-content p {
         text-align: center;
     }
-}
-/* --------------------Wwwwwwhy to choose our company -------------------- */
-#Why-us-section{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: space-around;
-    background: rgba(255, 255, 255, 0.04);
-
-}
-#why{
-    width: 40%;
-    height: auto;
-    flex-direction: row;
-    flex: 0 0 auto;
-    gap: 30px;
-   
-   
-}
-#why img{
-    width: 100%;
-    height: 90px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 5px;
-    align-items: center;
-    position: relative;
-    
-}
-#content{
-    color: var(--secondary-link-text);
-    width: 40%;
-
-}
-
-
-/* ------------------Q------------------------- */
-#faq-section {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-}
-
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 20px 0;
-  cursor: pointer;
-}
-
-.faq-item summary {
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  list-style: none; 
-}
-
-.faq-item[open] summary span {
-  transform: rotate(45deg);
-}
-
-.faq-item summary span {
-  transition: 0.3s;
-}
-
-.faq-item p {
-  padding-top: 15px;
-  color: #555;
-  line-height: 1.6;
-}
-/* -----------------footer-------------------------- */
-#footer {
-background-color: #101010;   
- color: var(--secondary-link-text);
-   padding: 50px 5% 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 40px;
-  justify-content: space-between;
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer-column h3, .footer-column h4 {
-  margin-bottom: 20px;
-  color: #00d4ff; 
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li a {
-  color: #ccc;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
 }
