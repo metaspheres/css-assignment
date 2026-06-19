@@ -131,7 +131,7 @@ a{
 .stats{
     display: flex;
     flex-direction: column;
-    background-color: #1F2937;
+    background-color: var(--background-hero-color);
     font-family: "Roboto";
     color: var(--secondary-link-text);
     padding-top: 20px;
@@ -226,6 +226,136 @@ a{
     display: flex;
     flex-direction: column;
     width: 33.33%;
+    margin: 20px;
+    border-style: solid;
+    margin: 20px;
+}
+.values-div img{
+    display: flex;
+    width: 10%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.title{
+    display: flex;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.paragraph{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-hero-color);
+    font-family: "Roboto";
+    color: var(--secondary-link-text);
+    padding: 20px;
+}
+.contact-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-label h1{
+    display: flex;
+    font-size: 50px;
+}
+.contact-label p{
+    display: flex;
+    font-size: 30px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--quote-bg);
+    width: 60%;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-names{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.form-names div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+.names-fields label{
+    display: flex;
+    margin: 20px;
+    color: var(--quote-text);
+    text-align: left;
+}
+.names-fields input{
+    border-style: solid;
+    border-radius: 25px;
+}
+.form-email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.form-email label{
+    display: flex;
+    margin: 20px;
+    color: var(--quote-text);
+    text-align: left;
+}
+.form-email input{
+    border-style: solid;
+    border-radius: 25px;
+}
+.form-message{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.form-message label{
+    display: flex;
+    margin: 20px;
+    color: var(--quote-text);
+    text-align: left;
+}
+.form-message input{
+    border-style: solid;
+    border-radius: 25px;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.contact-form button{
+    display: flex;
+    border-radius: 25px;
+    background-color: var(--call-to-action);
+    color: var(--secondary-link-text);
+    font-size: 50px;
 }
 
 footer{
