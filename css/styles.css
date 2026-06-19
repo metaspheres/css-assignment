@@ -169,6 +169,16 @@ main > section:not(#hero):not(#call-to-action) {
     border-radius: 5px;
     font-family: "Roboto";
     cursor: pointer;
+    color: var(--quote-text);
+}
+
+#hero a{
+    color: var(--background-hero-color);
+}
+
+#hero a:hover{
+    color: var(--call-to-action);
+
 }
 
 #hero-section{
@@ -205,7 +215,7 @@ main > section:not(#hero):not(#call-to-action) {
     align-content: center;
     background-color: var(--quote-bg);
     font-family: "Roboto Light";
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 blockquote {
@@ -270,7 +280,6 @@ cite {
 }
 
 #call-to-action{
-    width: 100%;
     max-width: 900px; 
     margin: 0 auto;
     margin-top: 60px;
@@ -285,7 +294,13 @@ cite {
     padding: 40px 80px;
     border-radius: 10px;
 }
+
 /* careers and training page */
+
+.background-body{
+    background-color: var(--background-hero-color);
+
+}
 
 #careers-main-container{
     padding:0 1rem 0 1rem;
@@ -294,22 +309,24 @@ cite {
     display: flex;
     flex-direction: column;
     font-family: "Roboto";
+    color:var(--hero-logo-color)
 }
 
 #careers-main-container h2{
     font-size: 3rem;
     margin: 4rem 0 2rem 0;
+
 }
+
+
 
 #careers-main-container h1{
     font-size: 5rem;
-
 }
 
 .anchor-card-container > section{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     gap: 50px;
 
 }
@@ -317,12 +334,24 @@ cite {
 .anchor-card-container article{
     width: 100%;
     height: auto;
+    background-color: var(--quote-bg);
+    color: var(--background-hero-color);
+    border-radius: 15px;
 }
 
 .anchor-card-container img{
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+.anchor-card-container h3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.anchor-card-container p{
+    padding: 0 10px 0px 10px;
 }
 
 .careers-container{
@@ -401,15 +430,15 @@ cite {
   .careers-container article{
     flex-direction: column;
     }
-.careers-container img{
-    width: 100%;
-    height: auto;
-    }
-.careers-container div{
-    display:flex;
-    flex-direction: column;
-    padding-bottom: 3vh;
-    }
+    .careers-container img{
+        width: 100%;
+        height: auto;
+        }
+    .careers-container div{
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 3vh;
+        }
     
     header {
         height: auto;
@@ -434,6 +463,11 @@ cite {
     nav a {
         font-size: 0.9rem;
     }
+    .cta-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -446,4 +480,5 @@ cite {
     flex-wrap: wrap;
     padding: 90px 50px;
     }
+
 }
