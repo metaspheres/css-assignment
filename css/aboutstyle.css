@@ -17,6 +17,10 @@
     font-family: "Roboto Light";
     src: url("../fonts/Roboto/Roboto-Light.ttf")
 }
+
+body{
+    margin: 0 auto;
+}
 header{
     display: flex;
     position: fixed;
@@ -187,6 +191,9 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
 }
 .team-div{
     display: flex;
@@ -254,6 +261,7 @@ a{
 .contact{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     background-color: var(--background-hero-color);
     font-family: "Roboto";
@@ -271,11 +279,13 @@ a{
 }
 .contact-label p{
     display: flex;
+    text-align: center;
     font-size: 30px;
 }
 .contact-form{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: var(--quote-bg);
@@ -369,12 +379,51 @@ a{
     font-size: 50px;
 }
 
-footer{
-    background-color: var(--background-hero-color);
+#footer {
+    background-color:var(--background-hero-color);   
+    color: var(--secondary-link-text);
+    padding: 50px 5% 20px;
+}
+
+.footer-container {
     display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3, .footer-column h4 {
+    margin-bottom: 20px;
+    color:var(--call-to-action); 
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: var(--secondary-link-text);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
     text-align: center;
-    justify-content: center;
-    padding: 15px 25px;
-    color:var(--secondary-link-text);
-    font-family: "Roboto";
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1050px) {
+ .team-container{
+    flex-wrap: wrap;
+ }   
 }
