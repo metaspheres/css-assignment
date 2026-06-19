@@ -20,6 +20,8 @@
 
 body{
     margin: 0 auto;
+    background-color: var(--background-hero-color);
+    font-family: "Roboto";
 }
 
 header, nav, .logo, a {
@@ -74,6 +76,7 @@ a.active {
 
 main{
     margin: 0 auto;
+
 }
 
 .mission-background{
@@ -117,7 +120,6 @@ main{
     justify-content: center;
     gap: 20px;
     background-color: var(--background-hero-color);
-    font-family: "Roboto";
     color: var(--secondary-link-text);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -162,7 +164,6 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--background-hero-color);
-    font-family: "Roboto";
     color: var(--secondary-link-text);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -201,7 +202,6 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-family: "Roboto";
     color: var(--secondary-link-text);
     background-color: var(--background-hero-color);
     padding-bottom: 20px;
@@ -249,7 +249,6 @@ main{
     display: flex;
     flex-direction: row;
     width: 100%;
-    font-family: "Roboto";
     color: var(--secondary-link-text);
     background-color: var(--background-hero-color);
     padding-top: 20px;
@@ -291,7 +290,6 @@ main{
     align-items: center;
     width: 100%;
     background-color: var(--background-hero-color);
-    font-family: "Roboto";
     color: var(--secondary-link-text);
     padding: 20px;
 }
@@ -316,8 +314,8 @@ main{
     align-items: center;
     justify-content: center;
     background-color: var(--quote-bg);
-    width: 60%;
-    aspect-ratio: 1/0.5;
+    max-width: 1100px;
+    width: 100%;
     border-radius: 25px;
     margin-top: 30px;
 }
@@ -347,7 +345,7 @@ main{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
-    font-size: 30px;
+    font-size: 1.5rem;
     white-space: nowrap;
 }
 .names-fields input{
@@ -366,7 +364,7 @@ main{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 .form-email input{
     border-style: solid;
@@ -384,26 +382,29 @@ main{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 .form-message input{
     border-style: solid;
     border-radius: 25px;
     border-color: var(--call-to-action);
 }
-.button-container{
+/* .button-container{
     display: flex;
     align-items: center;
     margin: 10px;
     margin-top: 100px;
-}
+} */
 .contact-form button{
     display: flex;
-    border-radius: 25px;
+    border-radius: 20px;
     border-style: hidden;
     background-color: var(--call-to-action);
     color: var(--secondary-link-text);
-    font-size: 50px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    padding: 1rem 2rem;
 }
 
 #footer {
@@ -487,4 +488,31 @@ main{
     nav a {
         font-size: 0.9rem;
     }
+
+}
+
+@media screen and (max-width: 1440px) {
+    
+    .contact-form {
+        width: 100%;
+        aspect-ratio: auto;
+
+    }
+
+    .form-names {
+        flex-direction: column;
+    }
+
+    .form-names div {
+        width: 100%;
+    }
+
+    .names-fields label {
+        white-space: normal;
+    }
+
+    .form-email, .form-message {
+        flex-direction: column;
+    }
+
 }
