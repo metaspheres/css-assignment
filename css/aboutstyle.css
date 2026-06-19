@@ -228,6 +228,7 @@ a{
     width: 33.33%;
     margin: 20px;
     border-style: solid;
+    border-radius: 25px;
     margin: 20px;
 }
 .values-div img{
@@ -287,7 +288,8 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+
 }
 .form-names{
     display: flex;
@@ -300,6 +302,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 50%;
     margin: 20px;
 }
 .names-fields label{
@@ -307,16 +310,18 @@ a{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
+    font-size: 30px;
+    white-space: nowrap;
 }
 .names-fields input{
     border-style: solid;
     border-radius: 25px;
+    border-color: var(--call-to-action);
 }
 .form-email{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     height: auto;
 }
 .form-email label{
@@ -324,16 +329,17 @@ a{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
+    font-size: 30px;
 }
 .form-email input{
     border-style: solid;
     border-radius: 25px;
+    border-color: var(--call-to-action);
 }
 .form-message{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     height: auto;
 }
 .form-message label{
@@ -341,19 +347,23 @@ a{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
+    font-size: 30px;
 }
 .form-message input{
     border-style: solid;
     border-radius: 25px;
+    border-color: var(--call-to-action);
 }
 .button-container{
     display: flex;
     align-items: center;
     margin: 10px;
+    margin-top: 100px;
 }
 .contact-form button{
     display: flex;
     border-radius: 25px;
+    border-style: hidden;
     background-color: var(--call-to-action);
     color: var(--secondary-link-text);
     font-size: 50px;
