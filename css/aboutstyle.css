@@ -21,35 +21,59 @@
 body{
     margin: 0 auto;
 }
-header{
+
+header, nav, .logo, a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+header {
     display: flex;
     position: fixed;
     top: 0;
-    z-index: 1000;
     width: 100%;
-    height: 40px;
-    padding: 20px 25px;
+    height: 50px;
+    padding: 15px 15px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000;
     background-color: var(--background-hero-color);
     color: var(--secondary-link-text);
-    font-family: "Roboto";
-    padding: 10px 15px;
-    justify-content: space-around;
-    transition: all 0.3s ease;
     border-bottom: 2px solid var(--background-header-color);
 }
 
-nav{
+nav {
     display: flex;
-    color:var(--secondary-link-text);
-    text-decoration: none;
     gap: 20px;
-    font-family: "Roboto";
-
+    padding: 15px;
+    align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color:var(--secondary-link-text);
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--call-to-action);
+}
+
+a {
+    color: var(--secondary-link-text);
+}
+
+a:hover, a.active {
+    color: var(--call-to-action);
+}
+
+a.active {
+    font-weight: bold;
+}
+
+main{
+    margin: 0 auto;
 }
 
 .mission-background{
@@ -91,6 +115,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     background-color: var(--background-hero-color);
     font-family: "Roboto";
     color: var(--secondary-link-text);
@@ -109,7 +134,8 @@ a{
 .built-img img{
     display: flex;
     flex-direction: column;
-    width: 130%;
+    object-fit: contain;
+    width: 90%;
     height: auto;
     border-radius: 25px;
 }
@@ -263,6 +289,7 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
     background-color: var(--background-hero-color);
     font-family: "Roboto";
     color: var(--secondary-link-text);
@@ -422,8 +449,42 @@ a{
     font-size: 0.9rem;
 }
 
-@media screen and (max-width: 1050px) {
- .team-container{
-    flex-wrap: wrap;
- }   
+@media screen and (max-width: 800px) {
+ .why-built{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    }
+ .built-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+    }
+    header {
+        height: auto;
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
 }
