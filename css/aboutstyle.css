@@ -76,7 +76,6 @@ a.active {
 
 main{
     margin: 0 auto;
-
 }
 
 .mission-background{
@@ -85,6 +84,7 @@ main{
     justify-content: center;
     width: 100%;
     background-color: var(--background-hero-color);
+    margin-top:  100px; ;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -95,9 +95,8 @@ main{
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 10px 100px;
+    margin: 100px 20px 0;
+    padding: 20px;
     border-radius: 25px;
     background-color: var(--quote-bg);
     font-family: "Roboto";
@@ -120,6 +119,7 @@ main{
     justify-content: center;
     gap: 20px;
     background-color: var(--background-hero-color);
+    font-family: "Roboto";
     color: var(--secondary-link-text);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -129,7 +129,6 @@ main{
     float:left;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
     margin-bottom: 100px;
     margin-top: 100px;
 }
@@ -150,20 +149,24 @@ main{
 .built-txt h1{
     display: flex;
     justify-content: center;
-    margin-left: 200px;
 }
 .built-txt p{
     display: flex;
     justify-content: center;
     font-size: 25px;
-    margin-left: 200px;
     padding-right: 50px;
+}
+.built-txt h1,
+.built-txt p{
+    margin-left:0;
+    text-align:center;
 }
 
 .stats{
     display: flex;
     flex-direction: column;
     background-color: var(--background-hero-color);
+    font-family: "Roboto";
     color: var(--secondary-link-text);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -202,6 +205,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-family: "Roboto";
     color: var(--secondary-link-text);
     background-color: var(--background-hero-color);
     padding-bottom: 20px;
@@ -222,15 +226,12 @@ main{
     gap: 20px;
 }
 .team-div{
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 25%;
-    aspect-ratio: 1/1;
-    border-radius: 50%px;
-    padding-left: 125px;
-    padding-right: 125px;
+    width: 250px;
+    padding: 20px;    
 }
 .team-div img{
     width: 100%;
@@ -290,6 +291,7 @@ main{
     align-items: center;
     width: 100%;
     background-color: var(--background-hero-color);
+    font-family: "Roboto";
     color: var(--secondary-link-text);
     padding: 20px;
 }
@@ -314,11 +316,11 @@ main{
     align-items: center;
     justify-content: center;
     background-color: var(--quote-bg);
-    max-width: 1100px;
     width: 100%;
     border-radius: 25px;
     margin-top: 30px;
 }
+
 .contact-form form{
     display: flex;
     flex-direction: column;
@@ -333,6 +335,12 @@ main{
     width: 100%;
     height: auto;
 }
+input,
+textarea{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px;
+}
 .form-names div{
     display: flex;
     flex-direction: row;
@@ -345,7 +353,7 @@ main{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 30px;
     white-space: nowrap;
 }
 .names-fields input{
@@ -364,7 +372,7 @@ main{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 30px;
 }
 .form-email input{
     border-style: solid;
@@ -382,29 +390,27 @@ main{
     margin: 20px;
     color: var(--quote-text);
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 30px;
 }
 .form-message input{
     border-style: solid;
     border-radius: 25px;
     border-color: var(--call-to-action);
 }
-/* .button-container{
+.button-container{
     display: flex;
     align-items: center;
     margin: 10px;
     margin-top: 100px;
-} */
+}
+
 .contact-form button{
     display: flex;
-    border-radius: 20px;
+    border-radius: 25px;
     border-style: hidden;
     background-color: var(--call-to-action);
     color: var(--secondary-link-text);
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    margin-top: 70px;
-    padding: 1rem 2rem;
+    font-size: 50px;
 }
 
 #footer {
@@ -449,70 +455,141 @@ main{
     border-top: 1px solid #333;
     font-size: 0.9rem;
 }
+@media screen and (max-width: 800px){
 
-@media screen and (max-width: 800px) {
- .why-built{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 20px;
-    }
- .built-txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px 10px;
-    }
-    header {
-        height: auto;
-        padding: 12px 15px;
-        flex-direction: column;
-        gap: 10px;
-        
+    header{
+        height:auto;
+        flex-direction:column;
+        gap:10px;
+        padding:12px;
     }
 
-    .logo {
-        font-size: 1.1rem;
+    nav{
+        width:100%;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    nav {
+    .our-mission{
+        margin:100px 15px 0;
+        padding:20px;
+    }
+
+    .our-mission p{
+        padding:10px;
+        font-size:18px;
+    }
+
+    .why-built{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .built-img{
+        width:90%;
+        margin:20px;
+    }
+
+    .built-txt h1{
+        margin-left:0;
+    }
+
+    .built-txt p{
+        margin-left:0;
+        padding:10px;
+        font-size:20px;
+    }
+
+    .stats-labels{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .stats-div{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .stats p,
+    .box{
+        width:90%;
+    }
+
+    .team p{
+        margin-left:0;
+        justify-content:center;
+        text-align:center;
+    }
+
+   
+
+    .values{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px;
-        padding: 0;
     }
 
-    nav a {
-        font-size: 0.9rem;
+    .values div{
+width: 50%;    }
+
+    .contact{
+        padding:20px 10px;
     }
 
-}
-
-@media screen and (max-width: 1440px) {
-    
-    .contact-form {
-        width: 100%;
-        aspect-ratio: auto;
-
+    .contact-form{
+        width:95%;
+        padding:20px;
     }
 
-    .form-names {
-        flex-direction: column;
+    .form-names{
+        flex-direction:column;
     }
 
-    .form-names div {
-        width: 100%;
+    .form-names div{
+        width:100%;
+        flex-direction:column;
+        align-items:flex-start;
+        margin:10px 0;
     }
 
-    .names-fields label {
-        white-space: normal;
+    .form-email,
+    .form-message{
+        width:100%;
+        flex-direction:column;
+        align-items:flex-start;
     }
 
-    .form-email, .form-message {
-        flex-direction: column;
+    .names-fields label,
+    .form-email label,
+    .form-message label{
+        font-size:20px;
+        margin:10px 0;
     }
 
+    .contact-form button{
+        font-size:24px;
+        padding:10px 30px;
+    }
+
+    .button-container{
+        margin-top:30px;
+    }
+
+    .contact-label h1{
+        font-size:35px;
+    }
+
+    .contact-label p{
+        font-size:20px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .footer-column{
+        width:100%;
+    }
 }
