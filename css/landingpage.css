@@ -1,5 +1,7 @@
 
-
+main{
+    background-color: white;
+}
 #hero {
     background-color: var(--background-hero-color);
     max-width: none;
@@ -11,6 +13,7 @@
     color: var(--hero-logo-color);
     font-family: "Roboto";
     padding: 100px 150px;
+
 }
 
 #hero div {
@@ -20,10 +23,13 @@
 }
 
 #hero h1 {
-    font-size: 2.5rem;
+    font-size: 48px;
     font-weight: bold;
 }
 
+.hero-content{
+    font-size: 18px;
+}
 #hero img {
     width: 100%;
     height: auto;
@@ -65,6 +71,7 @@
 
 section > .landing-page-subtitle{
     align-items: center;
+    padding-top: 10px;
 }
 .landing-page-subtitle{
     font-size: 2.5rem;
@@ -89,6 +96,11 @@ section > .landing-page-subtitle{
     object-fit: contain;
 }
 
+blockquote {
+    margin: 150px;
+
+}
+
 .quote {
     display: flex;
     flex-direction: column;
@@ -97,36 +109,11 @@ section > .landing-page-subtitle{
     background-color: var(--quote-bg);
     font-family: "Roboto Light";
     font-size: 2rem;
-}
-
-blockquote {
-    margin: 150px;
-    color: var(--background-hero-color);
+    border-radius: 15px;
+    color: var(--quote-text);
     font-style: italic;
-}
-
-.quote img {
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #ffffff;
-    max-width: 120px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-cite {
-    display: block;
-    color: var(--background-hero-color);
-    font-family: "Roboto";
-    font-style: normal;
-    font-size: 20px;
-    margin-top: 10px;
-    text-align: right;
 
 }
-
 
 .button-div button {
     width: 150px;
@@ -160,6 +147,30 @@ cite {
     font-size: 18px;
 }
 
+
+
+.quote img {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+cite {
+    display: block;
+    color: var(--background-hero-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+
+}
+
 #call-to-action {
     max-width: 900px;
     margin: 0 auto;
@@ -174,47 +185,4 @@ cite {
     gap: 10px;
     padding: 40px 80px;
     border-radius: 10px;
-}
-/* -----------------footer-------------------------- */
-#footer {
-background-color:var(--background-Footer-color);   
- color: var(--secondary-link-text);
-   padding: 50px 5% 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 40px;
-  justify-content: space-between;
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer-column h3, .footer-column h4 {
-  margin-bottom: 20px;
-  color:var(--call-to-action); 
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li a {
-  color: var(--secondary-link-text);
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
 }

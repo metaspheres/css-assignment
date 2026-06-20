@@ -1,5 +1,4 @@
 
-
 .background-body {
     background-color: var(--background-hero-color);
 
@@ -108,28 +107,59 @@
     background-color: var(--call-to-action);
 }
 
+.quote img {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 
+cite {
+    display: block;
+    color: var(--background-hero-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+
+}
 #testimonials h2 {
     font-family: "Roboto";
     font-size: 3rem;
 }
+/* 
+#testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
 
 #testimonials blockquote {
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: "Roboto Light";
+    color: var(--quote-text);
     font-style: italic;
+    background-color: var(--quote-bg);
+    padding: 50px;
     margin: 10vh 0 10vh 0;
     border-radius: 15px;
+    font-size: 36px;
+    text-align: center;
 }
 
-#testimonials em {
-    padding: 2rem;
-}
 
 /*media queries*/
 
 @media screen and (max-width: 780px) {
-    blockquote {
-        margin: 50px;
+    #testimonials blockquote {
+        font-size: 20px;
     }
 
     .anchor-card-container>section {
@@ -151,34 +181,9 @@
         padding-bottom: 3vh;
     }
 
-    header {
-        height: auto;
-        padding: 12px 15px;
-        flex-direction: column;
-        gap: 10px;
-
-    }
-
-    .logo {
-        font-size: 1.1rem;
-    }
-
-    nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px;
-        padding: 0;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-    }
-
     .cta-container {
         flex-direction: column;
         flex-wrap: wrap;
-
     }
 }
 
@@ -188,10 +193,4 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-
-    #hero {
-        flex-wrap: wrap;
-        padding: 90px 50px;
-    }
-
 }
