@@ -95,6 +95,8 @@ main {
 main>section:not(#hero):not(#call-to-action) {
     max-width: 1440px;
     margin: 0 auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 

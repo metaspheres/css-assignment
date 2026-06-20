@@ -2,6 +2,8 @@
 main{
     background-color: white;
 }
+
+
 #hero {
     background-color: var(--background-hero-color);
     max-width: none;
@@ -61,14 +63,6 @@ main{
 }
 
 
-#service-cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-    
-}
-
 section > .landing-page-subtitle{
     align-items: center;
     padding-top: 10px;
@@ -80,13 +74,24 @@ section > .landing-page-subtitle{
     color: #1f2937;
 }
 
+
+#service-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    align-items: stretch;
+    padding: 2rem 4rem;
+    margin-bottom: 5rem;
+}
+
 .article {
     display: flex;
     flex-direction: column;
-    max-width:150px;
-    height: auto;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 250px;
     font-family: "Roboto";
-    margin: 4rem 4rem;
     text-align: center;
 }
 
@@ -97,7 +102,7 @@ section > .landing-page-subtitle{
 }
 
 blockquote {
-    margin: 150px;
+    margin: 50px;
 
 }
 
@@ -112,6 +117,8 @@ blockquote {
     border-radius: 15px;
     color: var(--quote-text);
     font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 
@@ -148,18 +155,6 @@ blockquote {
 }
 
 
-
-.quote img {
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #ffffff;
-    max-width: 120px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 cite {
     display: block;
     color: var(--background-hero-color);
@@ -185,4 +180,43 @@ cite {
     gap: 10px;
     padding: 40px 80px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    #service-cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .article {
+        flex: 0 0 45%;
+        max-width: none; 
+        align-items: center;      /* remove the 250px cap */
+    }
+
+    #service-cards-container img {
+        width: 80%;
+        height: auto;
+    }
+    .quote blockquote {
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #hero {
+        flex-wrap: wrap;
+        padding: 90px 50px;
+    }
+
+    #service-cards-container {
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+
+    .article {
+        flex: 1 1 40%;       /* 2 cards per row with room to breathe */
+    }
 }

@@ -5,7 +5,6 @@
 }
 
 #careers-main-container {
-    padding: 0 1rem 0 1rem;
     margin-top: 7vw;
     margin-bottom: 7vw;
     display: flex;
@@ -179,11 +178,6 @@ cite {
         display: flex;
         flex-direction: column;
         padding-bottom: 3vh;
-    }
-
-    .cta-container {
-        flex-direction: column;
-        flex-wrap: wrap;
     }
 }
 
