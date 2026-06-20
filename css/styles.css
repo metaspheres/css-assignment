@@ -201,18 +201,17 @@ main>section:not(#hero):not(#call-to-action) {
 .article {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
-    height: auto;
+    max-width: 150px;
+    height: 100%;
     font-family: "Roboto";
     margin: 4rem 4rem;
     text-align: center;
 }
 
 #service-cards-container img {
-    max-width: 100%;
-    height: auto;
     border-radius: 10px;
     border: 2px solid var(--call-to-action);
+    object-fit: contain;
 }
 
 .quote {
