@@ -1,0 +1,197 @@
+
+
+.background-body {
+    background-color: var(--background-hero-color);
+
+}
+
+#careers-main-container {
+    padding: 0 1rem 0 1rem;
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto";
+    color: var(--hero-logo-color)
+}
+
+#careers-main-container h2 {
+    font-size: 3rem;
+    margin: 4rem 0 2rem 0;
+
+}
+
+
+
+#careers-main-container h1 {
+    font-size: 5rem;
+}
+
+.anchor-card-container>section {
+    display: flex;
+
+    gap: 50px;
+
+}
+
+.anchor-card-container article {
+    width: 100%;
+    height: auto;
+    background-color: var(--quote-bg);
+    color: var(--background-hero-color);
+    border-radius: 15px;
+}
+
+.anchor-card-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.anchor-card-container h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.anchor-card-container p {
+    padding: 0 10px 0px 10px;
+}
+
+.careers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.careers-container article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    background-color: var(--quote-bg);
+    color: var(--quote-text);
+    border-radius: 15px;
+
+}
+
+.careers-container article div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.careers-container img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+
+}
+
+.apply-bt {
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: var(--background-hero-color);
+    color: var(--secondary-link-text);
+    border: 3px solid var(--secondary-link-text);
+    border-radius: 5px;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.apply-bt:hover {
+    background-color: var(--call-to-action);
+}
+
+
+#testimonials h2 {
+    font-family: "Roboto";
+    font-size: 3rem;
+}
+
+#testimonials blockquote {
+    padding: 50px;
+    font-style: italic;
+    margin: 10vh 0 10vh 0;
+    border-radius: 15px;
+}
+
+#testimonials em {
+    padding: 2rem;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 780px) {
+    blockquote {
+        margin: 50px;
+    }
+
+    .anchor-card-container>section {
+        flex-direction: column;
+    }
+
+    .careers-container article {
+        flex-direction: column;
+    }
+
+    .careers-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .careers-container div {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3vh;
+    }
+
+    header {
+        height: auto;
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #service-cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #hero {
+        flex-wrap: wrap;
+        padding: 90px 50px;
+    }
+
+}

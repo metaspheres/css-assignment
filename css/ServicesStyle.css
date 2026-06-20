@@ -1,74 +1,4 @@
-:root {
-    --background-hero-color: #1f2937;
-    --background-header-color: #3b4c64;
-    --background-Footer-color:#101010;
-    --hero-logo-color: #F9FAF8;
-    --secondary-link-text: #E5E7EB;
-    --call-to-action: #3882F6;
-    --quote-bg: #E5E7EB;
-    --quote-text: #1F2937;
-}
 
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Roboto Light";
-    src: url("../fonts/Roboto/Roboto-Light.ttf");
-}
-
-/* --------------header--------------------- */
-header, nav, .logo, a {
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    padding: 15px 15px;
-    justify-content: space-around;
-    align-items: center;
-    box-sizing: border-box;
-    z-index: 1000;
-    background-color: var(--background-hero-color);
-    color: var(--secondary-link-text);
-    border-bottom: 2px solid var(--background-header-color);
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-    padding: 15px;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.3rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: var(--call-to-action);
-}
-
-a {
-    color: var(--secondary-link-text);
-}
-
-a:hover, a.active {
-    color: var(--call-to-action);
-}
-
-a.active {
-    font-weight: bold;
-}
 /* -------------body ----------------- */
 body {
     margin: 0 auto;
@@ -77,6 +7,12 @@ body {
     font-family: "roboto" !important;
 
 }
+
+main>section:not(#hero){
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 
 h1 {
     font-size: 2.5rem;
@@ -177,14 +113,12 @@ p {
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--secondary-link-text);
-    padding: 0 10%;
     margin: 0 0 10px 0;
 }
 
 .services-header {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     margin-bottom: 10px;
 }
 
@@ -193,7 +127,6 @@ p {
     width: 240px;
     height: 4px;
     background-color: var(--call-to-action);
-    margin-left: 10%;
     border-radius: 10px;
 }
 
@@ -202,7 +135,6 @@ p {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    padding: 40px 10%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 10%;
@@ -270,8 +202,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
-    margin: 20px auto 40px auto;
+    width: 100%;
+    margin: 20px 0 40px 0;
     gap: 24px;
     font-family: "Roboto", sans-serif;
     background-color: var(--background-hero-color);
@@ -418,7 +350,7 @@ p {
 
 /* ------------------Q------------------------- */
 #faq-section {
-  max-width: 800px;
+  max-width: 800px !important;
   margin: 50px auto;
   padding: 20px;
   color: var(--secondary-link-text);
@@ -451,51 +383,7 @@ p {
   color: var(--call-to-action);
   line-height: 1.6;
 }
-/* -----------------footer-------------------------- */
-#footer {
-background-color:var(--background-Footer-color);   
- color: var(--secondary-link-text);
-   padding: 50px 5% 20px;
-}
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 40px;
-  justify-content: space-between;
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer-column h3, .footer-column h4 {
-  margin-bottom: 20px;
-  color:var(--call-to-action); 
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li a {
-  color: var(--secondary-link-text);
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-}
-
-/* ---------------------responsive----------------------------- */
 /* --------------------responsive---------------------- */
 @media (max-width: 768px) {
 
