@@ -89,7 +89,7 @@ main{
     justify-content: center;
     width: 100%;
     background-color: var(--background-hero-color);
-    margin-top:  100px; ;
+    margin-top:  5px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -117,56 +117,53 @@ main{
     text-align: center;
 }
 
-.why-built{
+.why-built {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px; 
+    padding: 80px 10%; 
     background-color: var(--background-hero-color);
-    font-family: "Roboto";
     color: var(--secondary-link-text);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
 }
-.built-img{
+
+.built-img {
+    flex: 1; 
     display: flex;
-    float:left;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
 }
-.built-img img{
-    display: flex;
-    flex-direction: column;
-    object-fit: contain;
-    width: 90%;
-    height: auto;
+
+.built-img img {
+    width: 100%;
+    max-width: 500px; 
     border-radius: 25px;
-    margin-left: 10px;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
 }
-.built-txt{
+
+.built-txt {
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 10px;
+    text-align: left; 
 }
-.built-txt h1{
-    display: flex;
-    justify-content: center;
+
+.built-txt h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--hero-logo-color);
 }
-.built-txt p{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    padding-right: 50px;
+
+.built-txt p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.9;
+    margin: 0;
 }
-.built-txt h1,
-.built-txt p{
-    margin-left:0;
-    text-align:center;
-}
+
 
 .stats{
     display: flex;
@@ -182,23 +179,26 @@ main{
     flex-direction: row;
     width: 100%;
 }
-.stats p{
-    display: flex;
-    flex-direction: row;
+.stats figcaption{
     justify-content: center;
-    width: 33.33%;
     font-size: 30px;
+    padding-bottom: 20px;
 }
 .stats-div{
     display: flex;
     width: 100%;
     height: auto;
 }
+
 .box{
     display: flex;
     margin: 10px;
-    width: 33.33%;
+    /* width: 33.33%; */
     border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
 }
 .box img{
     display:flex ;
@@ -207,49 +207,55 @@ main{
     border-radius: 30px;
 }
 
-.team{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-family: "Roboto";
-    color: var(--secondary-link-text);
-    background-color: var(--background-hero-color);
-    padding-bottom: 20px;
-}
-.team p{
-    display: flex;
-    margin-left: 50px;
-    margin-top: 50px;
-    font-size: 30px;
 
-}
-.team-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 20px;
-}
-.team-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.team {
+    padding: 60px 5%;
+    background-color: var(--background-hero-color);
     text-align: center;
+}
+
+/* العنوان الرئيسي */
+.team > p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-link-text);
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-div {
     width: 250px;
-    padding: 20px;    
+    padding: 20px;
 }
-.team-div img{
-    width: 90%;
-    aspect-ratio: 1/1;
+
+.team-div img {
+    width: 100%;
+    aspect-ratio: 1/1; /* يضمن بقاء الصورة دائرية تماماً */
+    object-fit: cover;
     border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
+    margin-bottom: 15px;
+    border: 3px solid var(--call-to-action);
 }
-.team-div p{
-    font-size: 35px;
-    padding: 0px;
-    margin-top: 0px;
+
+.team-div h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--hero-logo-color);
+}
+
+.team-div .role {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: var(--call-to-action);
+    font-weight: 500;
 }
 
 .values{
@@ -290,136 +296,98 @@ main{
     font-size: 20px;
 }
 
-.contact{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+/* --------------------- */
+.contact {
+    padding: 60px 10%;
     background-color: var(--background-hero-color);
-    font-family: "Roboto";
     color: var(--secondary-link-text);
-    padding: 20px;
 }
-.contact-label{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contact-label h1{
-    display: flex;
-    font-size: 50px;
-}
-.contact-label p{
-    display: flex;
+
+.contact-label {
     text-align: center;
-    font-size: 30px;
+    margin-bottom: 40px;
 }
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+
+.contact-label h1 { font-size: 3rem; margin-bottom: 10px; }
+.contact-label p { font-size: 1.2rem; opacity: 0.8; }
+
+.contact-form {
     background-color: var(--quote-bg);
-    width: 100%;
-    border-radius: 25px;
-    margin-top: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.contact-form form{
+.contact-form form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
+    gap: 20px;
 }
-.form-names{
+
+
+.form-names {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    gap: 20px;
+}
+
+.names-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 1rem;
+    color: var(--quote-text);
+    font-weight: bold;
+    margin: 0;
+}
+
+input, textarea {
     width: 100%;
-    height: auto;
-}
-input,
-textarea{
-    width:100%;
-    box-sizing:border-box;
-    padding:10px;
-}
-.form-names div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 50%;
-    margin: 20px;
-}
-.names-fields label{
-    display: flex;
-    margin: 20px;
-    color: var(--quote-text);
-    text-align: left;
-    font-size: 30px;
-    white-space: nowrap;
-}
-.names-fields input{
-    border-style: solid;
-    border-radius: 25px;
-    border-color: var(--call-to-action);
-}
-.form-email{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-}
-.form-email label{
-    display: flex;
-    margin: 20px;
-    color: var(--quote-text);
-    text-align: left;
-    font-size: 30px;
-}
-.form-email input{
-    border-style: solid;
-    border-radius: 25px;
-    border-color: var(--call-to-action);
-}
-.form-message{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-}
-.form-message label{
-    display: flex;
-    margin: 20px;
-    color: var(--quote-text);
-    text-align: left;
-    font-size: 30px;
-}
-.form-message input{
-    border-style: solid;
-    border-radius: 25px;
-    border-color: var(--call-to-action);
-}
-.button-container{
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    margin-top: 100px;
+    padding: 12px;
+    border: 2px solid var(--call-to-action);
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; 
 }
 
-.contact-form button{
+.button-container {
     display: flex;
-    border-radius: 25px;
-    border-style: hidden;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.contact-form button {
     background-color: var(--call-to-action);
-    color: var(--secondary-link-text);
-    font-size: 50px;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-@media screen and (max-width: 800px){
+.contact-form button:hover {
+    filter: brightness(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .why-built {
+        flex-direction: column;
+        text-align: center;
+    }
+    .built-txt {
+        text-align: center;
+        width: 100%;
+    }
 
     header{
         height:auto;
@@ -433,6 +401,8 @@ textarea{
         flex-wrap:wrap;
         justify-content:center;
     }
+  
+
 
     .our-mission{
         margin:100px 15px 0;
@@ -444,10 +414,7 @@ textarea{
         font-size:18px;
     }
 
-    .why-built{
-        flex-direction:column;
-        text-align:center;
-    }
+    
 
     .built-img{
         width:90%;
@@ -463,6 +430,8 @@ textarea{
         padding:10px;
         font-size:20px;
     }
+
+   
 
     .stats-labels{
         flex-direction:column;
@@ -495,7 +464,8 @@ textarea{
     }
 
     .values div{
-width: 50%;    }
+     width: 95%;  
+      }
 
     .contact{
         padding:20px 10px;

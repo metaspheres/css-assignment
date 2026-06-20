@@ -82,19 +82,20 @@ a.active {
 
 
 body {
-    font-family: "Roboto";
-    margin: 0 auto;
-    background-color: var(--background-hero-color);
+    font-family: "Roboto" !important;
+    margin: 0 auto !important;
+    background-color: var(--background-hero-color) ;
 
 }
 
 main {
     max-width: none;
+    
 }
 
 main>section:not(#hero):not(#call-to-action) {
     max-width: 1440px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }

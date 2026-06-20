@@ -1,6 +1,10 @@
+body{
+    background-color: white !important;
 
+}
 main{
     background-color: white;
+   
 }
 
 
@@ -75,7 +79,7 @@ section > .landing-page-subtitle{
 }
 
 
-#service-cards-container {
+ #service-cards-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -84,21 +88,34 @@ section > .landing-page-subtitle{
     padding: 2rem 4rem;
     margin-bottom: 5rem;
 }
+    
 
-.article {
+.serv-card{
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex: 2 2 0;
     min-width: 0;
     max-width: 250px;
     font-family: "Roboto";
     text-align: center;
+    
 }
 
 #service-cards-container img {
     border-radius: 10px;
-    border: 2px solid var(--call-to-action);
+    border: 1px solid var(--background-hero-color);
     object-fit: contain;
+    
+    
+}
+.serv-card figcaption{
+  font-size: 0.80rem;
+    line-height: 1.5;
+    opacity: 0.85;
+    margin: 0;
+    display: block;
+    text-align: center;
+
 }
 
 blockquote {
@@ -169,8 +186,8 @@ cite {
 #call-to-action {
     max-width: 900px;
     margin: 0 auto;
-    margin-top: 60px;
     margin-bottom: 60px;
+    margin-top: 60px;
     background-color: var(--call-to-action);
     font-family: "Roboto";
     color: var(--secondary-link-text);
@@ -190,10 +207,10 @@ cite {
         gap: 1.5rem;
     }
 
-    .article {
+    .serv-card{
         flex: 0 0 45%;
         max-width: none; 
-        align-items: center;      /* remove the 250px cap */
+        align-items: center;     
     }
 
     #service-cards-container img {
@@ -216,7 +233,7 @@ cite {
         padding: 2rem;
     }
 
-    .article {
+    .serv-card{
         flex: 1 1 40%;       /* 2 cards per row with room to breathe */
     }
 }
