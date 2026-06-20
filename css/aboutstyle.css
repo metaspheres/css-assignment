@@ -139,6 +139,7 @@ main{
     width: 90%;
     height: auto;
     border-radius: 25px;
+    margin-left: 10px;
 }
 .built-txt{
     display: flex;
