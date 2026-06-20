@@ -9,7 +9,7 @@ body {
 
 }
 
-main>section:not(#hero):not(#why-us-section){
+main>section:not(#hero):not(#Why-us-section){
     max-width: 1440px;
     /* margin: 0 auto; */
     flex-direction: row;
@@ -312,14 +312,14 @@ p {
     flex-direction: row;
     gap: 30px;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 25px;
+    padding: 25px ! important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     align-items: center;
     box-sizing: border-box;
     margin-top: 30px;
     justify-content: space-around;
     background: rgba(255, 255, 255, 0.04);
-
+    border-radius: 20px;
 }
 .why-grid{
     flex: auto;
@@ -516,4 +516,9 @@ p {
         flex-direction: column;
         gap: 20px;
     }
+
+    #Why-us-section{
+        flex-wrap: wrap;
+    }
 }
+

@@ -376,9 +376,6 @@ input, textarea {
     filter: brightness(1.1);
 }
 
-
-
-
 @media (max-width: 768px) {
     .why-built {
         flex-direction: column;
