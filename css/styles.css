@@ -200,6 +200,9 @@ main>section:not(#hero):not(#call-to-action) {
     
 }
 
+section > .landing-page-subtitle{
+    align-items: center;
+}
 .landing-page-subtitle{
     font-size: 2.5rem;
     font-weight: bold;
