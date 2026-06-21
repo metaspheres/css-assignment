@@ -306,7 +306,7 @@ p {
 /* ------------refactor done ------------------ */
 
 /* --------------------Wwwwwwhy to choose our company -------------------- */
-/* #Why-us-section {
+#Why-us-section {
     width: 98%;
     padding: 60px 5%;
     display: flex;
@@ -321,7 +321,7 @@ p {
     box-sizing: border-box;
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.04);
-} */
+}
 
 .why-grid {
     flex: 1; 
@@ -350,7 +350,6 @@ p {
     flex: 1; 
     color: var(--secondary-link-text);
     padding-left: 20px;
-
 }
 
 /* ------------------Q------------------------- */
