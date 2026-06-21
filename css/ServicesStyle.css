@@ -349,6 +349,8 @@ p {
 .content {
     flex: 1; 
     color: var(--secondary-link-text);
+    padding-left: 20px;
+
 }
 
 /* ------------------Q------------------------- */
